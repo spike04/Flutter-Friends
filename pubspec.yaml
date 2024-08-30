@@ -1,0 +1,42 @@
+name: flutter_friends
+description: 'A new Flutter project.'
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.1
+
+dependencies:
+  bloc: ^8.1.4
+  equatable: ^2.0.5
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.6
+  font_awesome_flutter:
+    git:
+      url: https://github.com/fluttercommunity/font_awesome_flutter
+      ref: bef4f3f829117241202486f8a0d836e89d167376
+  hydrated_bloc: ^9.1.5
+  intl: ^0.19.0
+  json_annotation: ^4.9.0
+  path_provider: ^2.1.4
+  pub_semver: ^2.1.4
+  restart_app: ^1.2.1
+  shorebird_code_push: ^1.1.4
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.12
+  json_serializable: ^6.8.0
+
+flutter:
+  assets:
+    - assets/
+    - assets/activities/
+    - assets/speakers/
+    - assets/sponsors/
+    - shorebird.yaml
+  uses-material-design: true

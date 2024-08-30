@@ -1,0 +1,27 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'talk.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+Talk _$TalkFromJson(Map<String, dynamic> json) => Talk(
+      name: json['name'] as String,
+      speakers: (json['speakers'] as List<dynamic>)
+          .map((e) => Speaker.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      duration: Duration(microseconds: (json['duration'] as num).toInt()),
+      startTime: DateTime.parse(json['startTime'] as String),
+      location: Location.fromJson(json['location'] as Map<String, dynamic>),
+      description: json['description'] as String,
+    );
+
+Map<String, dynamic> _$TalkToJson(Talk instance) => <String, dynamic>{
+      'name': instance.name,
+      'duration': instance.duration.inMicroseconds,
+      'startTime': instance.startTime.toIso8601String(),
+      'location': instance.location,
+      'speakers': instance.speakers,
+      'description': instance.description,
+    };
